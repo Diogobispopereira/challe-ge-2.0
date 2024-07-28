@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --cor-primaria: #0A3871;
+    --cor-secundaria:#495057;
+    --cor-terciaria: #FFFFFF;
+    
+}
+body{
+    padding: 2%;
+    background-color:#F3F5FC;
+}
+.conteudo__img{
+    padding: 3%;
+    width: 31.09px;
+    height: 48px;
+    left: 44px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.conteudo__secundario{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    
+}
+.caixa__container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 7%;
+}
+.conteudo__input::placeholder{
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 12px;
+    color: var(--cor-primaria);
+}
+.conteudo__input{
+    height: 624px;
+    width: 75%;
+    border: none;
+    background: transparent;
+    padding: 4px 17px;
+    font-size: 34px;
+/*serve para tirar a borda do textArea e os traços que fica no final*/ 
+    outline: none;
+    resize: none;
+}
+
+.conteudo__texto{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--cor-secundaria);
+    margin-left: 2%;
+}
+
+.conteudo__caixa-butao{
+    width: auto;
+    height: auto;  
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    margin:12px;
+}
+.conteudo__butao-primario{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    background:var(--cor-primaria);
+}
+.conteudo__butao-primario:hover{
+    cursor: pointer;
+}
+.conteudo__butao-secundario{
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    color: var(--cor-primaria);
+    background:#D8DFE8;
+    border: 1px;
+}
+.conteudo__butao-secundario:hover{
+    cursor: pointer;
+}
+.conteudo__caixa-secundaria{
+    width: 400px;
+    text-align: center;
+    height: 744px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-terciaria);
+}
+.conteudo__input-secundario{
+    border: none;
+    width: 336px;
+    height: 65%;
+    margin: 30px 22px;
+    font-size: 24px;
+    /*serve para tirar a borda do textArea e os traços que fica no final*/ 
+    outline: none;
+    resize: none;
+}
+.conteudo__input-secundario::placeholder{
+    text-align: center;
+    margin: 24px;
+    color: var(--cor-secundaria); 
+    
+}
+.butao__copiar{
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--cor-primaria);
+    padding: 24px;
+    gap: 8px;
+    background-color:var(--cor-terciaria);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+.butao__copiar:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 90px;
+    background: linear-gradient(45deg, #290707, #e0dada, #462d2d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.footer__p{
+    background-image: linear-gradient(to bottom, #0a0312, #ec0707, #141111);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 1200px) {
+    .conteudo__secundario{
+        flex-direction: column;
+    }
+    .caixa__container{
+        margin: 0;
+        width: 100%;
+    }
+    .conteudo__input{
+        height: 549px;
+        padding: 1px 1px 0 52px;
+        width: 90%;
+    }
+    .conteudo__caixa-secundaria{
+        width: 100%;
+        height: 612px;
+    }
+    .conteudo__input-secundario{
+        width: 95%;
+        margin: 12px;
+    }
+    .conteudo__caixa-butao{
+        padding: 0px 0px 19px 0px;
+        width: 612px;
+    }
+    .conteudo__butao-primario{
+        width: 40vw;
+    }
+    .conteudo__butao-secundario{
+    width: 40vw;
+}
+}
+@media screen and (max-width: 784px) {
+   .conteudo__input{
+    width: 90%;
+    padding: 1px 6px 4px 22px;
+   }
+   .conteudo__caixa-butao{
+    flex-direction: column;
+    width: 100%;
+   }
+   .conteudo__butao-primario{
+    width:100%;
+   }
+   .conteudo__butao-secundario{
+    width:100%;
+   }
+   .footer__p{
+    font-size: 24px;
+  }
+} 

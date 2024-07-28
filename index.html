@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos.css" />
+  <title>Decodificador</title>
+</head>
+<body>
+  <header class="conteudo__img">
+    <img src="./imagens/Logo.png" alt="imagem da letra: a "/>
+  </header>
+  <main class="conteudo__principal">
+    <section class="conteudo__caixa">
+      <textarea type="text" placeholder="Digite seu texto" id="inputTexto" class="conteudo__input"></textarea>
+      <h1 class="conteudo__texto"><img src="./imagens/Group.png" class="conteudo__caixa-img"> Apenas letras minúsculas e sem acento.</h1>
+      <div class="conteudo__caixa-butao">
+        <a>
+          <button class="conteudo__butao-primario" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+        </a>
+        <a href="descriptografar.html">
+          <button class="conteudo__butao-secundario">
+            Descriptografar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="conteudo__caixa-secundaria">
+      <img src="./imagens/imagem quadro.png" alt="imagem de um boneco">
+      <p id="outputTexto" class="conteudo__texto-primario">
+        Nenhuma mensagem encontrada
+      </p>
+      <p class="conteudo__texto-secundario">
+        Digite um texto que você deseja criptografar ou descriptografar.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__p">Desenvolvido por: Diogo</p>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+</html>
